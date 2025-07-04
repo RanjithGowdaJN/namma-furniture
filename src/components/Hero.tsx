@@ -32,8 +32,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          We manufacture and deliver furniture that looks like what you see on Urban Ladder or Pepperfry – 
-          but at 50% of the cost. No middlemen, no commissions.
+          Looks of Urban Ladder or Pepper fry, but at 50% of the cost. No middlemen, no commissions.
         </p>
 
         <div className="bg-card p-8 rounded-lg border border-border shadow-sm max-w-2xl mx-auto">
