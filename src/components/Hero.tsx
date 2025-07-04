@@ -7,9 +7,20 @@ const Hero = () => {
   const [productLink, setProductLink] = useState("");
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent(`Hi, I'm interested in this product: ${productLink}. Can you manufacture it?`);
-    const phoneNumber = "+919876543210"; // Replace with actual WhatsApp number
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    const phoneNumber = '919043404233'; // without + sign
+    const url = (document.getElementById('productUrl') as HTMLInputElement)?.value.trim();
+
+    if (!url) {
+      alert("Please paste a product link.");
+      return;
+    }
+
+    const message = `Hi, I'm interested in this product: ${url}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp in a new tab (works on mobile and desktop)
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -33,7 +44,7 @@ const Hero = () => {
             <div className="relative">
               <Link2 className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
               <Input
-                id="product-link"
+                id="productUrl"
                 type="url"
                 placeholder="https://www.urbanladder.com/..."
                 value={productLink}
@@ -45,7 +56,6 @@ const Hero = () => {
           
           <Button
             onClick={handleWhatsAppClick}
-            disabled={!productLink.trim()}
             variant="whatsapp"
             size="lg"
             className="w-full h-12 text-base"

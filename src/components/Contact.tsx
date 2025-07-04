@@ -4,7 +4,7 @@ import { MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 const Contact = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hi, I'd like to know more about your furniture manufacturing services.");
-    const phoneNumber = "+919876543210"; // Replace with actual WhatsApp number
+    const phoneNumber = "919043404233"; // without + sign
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                <p className="text-muted-foreground">+91 98765 43210</p>
+                <p className="text-muted-foreground">+91 90434 04233</p>
               </div>
             </div>
 
