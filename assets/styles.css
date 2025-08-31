@@ -147,3 +147,28 @@ input[type="url"]:focus{border-color:var(--primary)}
 }
 .hero-cat-title{ font-weight:700; line-height:1.2 }
 .hero-cat-desc{ color:var(--muted-fg); font-size:14px; margin-top:4px }
+
+/* space below the WhatsApp form */
+.form-card{ margin-bottom:18px; }
+@media (min-width:720px){ .form-card{ margin-bottom:22px; } }
+
+/* small title above the mini cards */
+.hero-mini-title{
+  margin:4px 0 8px;
+  text-align:center;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.2px;
+}
+@media (min-width:720px){
+  .hero-mini-title{ font-size:20px; }
+}
+
+/* (already added earlier) mini info cards in hero */
+.hero-cats{ display:grid; gap:12px; grid-template-columns:1fr; margin:8px auto 0; max-width:980px; }
+@media (min-width:720px){ .hero-cats{ grid-template-columns:repeat(3,1fr); } }
+.hero-cat{ display:flex; gap:12px; align-items:flex-start; background:#fff; border:1px solid var(--border); border-radius:14px; padding:12px 14px; box-shadow:var(--shadow); }
+.hero-cat-icn{ width:36px; height:36px; display:grid; place-items:center; border-radius:10px; background:color-mix(in srgb, var(--primary-2) 16%, white); color:var(--primary); flex:0 0 36px; }
+.hero-cat-title{ font-weight:700; line-height:1.2; }
+.hero-cat-desc{ color:var(--muted-fg); font-size:14px; margin-top:4px; }
+
