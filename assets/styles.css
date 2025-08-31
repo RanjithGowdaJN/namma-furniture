@@ -172,3 +172,31 @@ input[type="url"]:focus{border-color:var(--primary)}
 .hero-cat-title{ font-weight:700; line-height:1.2; }
 .hero-cat-desc{ color:var(--muted-fg); font-size:14px; margin-top:4px; }
 
+/* Combined steps + why chips */
+#how-why .steps-row{ margin-top: 6px; }
+
+.why-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  margin-top:18px;
+}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-weight:600;
+  font-size:14px;
+  color:var(--fg);
+  box-shadow: var(--shadow);
+}
+.chip-icn{
+  width:22px;height:22px;
+  display:grid;place-items:center;
+  color:var(--primary);
+}
