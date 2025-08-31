@@ -112,67 +112,76 @@
 </section>
 
 
-  <!-- How It Works -->
-  <section id="how-it-works" class="section muted-bg">
-    <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">Three simple steps to get high-quality furniture at factory prices</p>
-      <div class="grid grid-3">
-        <div class="step">
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24"><path d="M10.59 13.41 9.17 12l6-6 1.41 1.41-6 6Zm2.82-2.82L14.83 12l-6 6L7.41 16.59l6-6Z"/></svg>
-          </div>
-          <div class="step-title">Paste a Link</div>
-          <div class="step-desc">From Pepperfry, Urban Ladder, Amazon, Flipkart, etc.</div>
+<!-- How It Works + Why It's Cheaper (combined) -->
+<section id="how-why" class="section muted-bg">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle">Three simple steps — and why it’s cheaper</p>
+
+    <!-- Row 1: Steps -->
+    <div class="grid grid-3 steps-row">
+      <div class="step">
+        <div class="step-icon">
+          <!-- link icon -->
+          <svg viewBox="0 0 24 24"><path d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 1 0 0 6h3v2h-3a5 5 0 0 1-5-5Zm6.2 1h4v-2h-4v2Zm5-6h3a5 5 0 0 1 0 10h-3v-2h3a3 3 0 1 0 0-6h-3V7Z"/></svg>
         </div>
-        <div class="step">
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 7H3V5h18v2Zm0 4H3v2h18v-2Zm0 6H3v2h18v-2Z"/></svg>
-          </div>
-          <div class="step-title">We Review &amp; Quote</div>
-          <div class="step-desc">You get the same design at ~50% of the price</div>
+        <div class="step-title">Paste a Link</div>
+        <div class="step-desc">From any furniture site</div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <!-- quote/list icon -->
+          <svg viewBox="0 0 24 24"><path d="M21 7H3V5h18v2Zm0 4H3v2h18v-2Zm0 6H3v2h18v-2Z"/></svg>
         </div>
-        <div class="step">
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 6h13v10H3V6Zm14 3h3l1 2v5h-4V9Z"/></svg>
-          </div>
-          <div class="step-title">Delivered to Your Doorstep</div>
-          <div class="step-desc">Same look, same utility, factory-direct</div>
+        <div class="step-title">We Quote Fast</div>
+        <div class="step-desc">Price + timeline</div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <!-- delivery/box icon -->
+          <svg viewBox="0 0 24 24"><path d="M3 6h13v10H3V6Zm14 3h3l1 2v5h-4V9Z"/></svg>
         </div>
+        <div class="step-title">Made &amp; Delivered</div>
+        <div class="step-desc">Factory-direct</div>
       </div>
     </div>
-  </section>
 
-  <!-- Why It's Cheaper -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Why It's Cheaper</h2>
-      <p class="section-subtitle">We cut out the unnecessary costs that make furniture expensive</p>
-      <div class="grid grid-4">
-        <div class="info-card">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4Zm0 2.18L19 6v5c0 4.35-2.77 8.61-7 9.93C7.77 19.61 5 15.35 5 11V6l7-2.82Z"/></svg></div>
-          <div class="card-title">No Marketplace Commissions</div>
-          <div class="card-desc">We don't pay 15–25% commission to online marketplaces</div>
-        </div>
-        <div class="info-card">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M20 6H4v12h16V6Zm-2 2v8H6V8h12Z"/></svg></div>
-          <div class="card-title">No Warehouse Overhead</div>
-          <div class="card-desc">We manufacture on-demand, saving on storage costs</div>
-        </div>
-        <div class="info-card">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M4 4h16v4H4V4Zm0 6h16v10H4V10Z"/></svg></div>
-          <div class="card-title">Local Manufacturing</div>
-          <div class="card-desc">Made in Bangalore to reduce transportation and import costs</div>
-        </div>
-        <div class="info-card">
-          <div class="icn"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"/></svg></div>
-          <div class="card-title">Direct Delivery</div>
-          <div class="card-desc">From our factory to your doorstep, no middlemen</div>
-        </div>
-      </div>
+    <!-- Row 2: Why it's cheaper (chips) -->
+    <div class="why-chips" role="list" aria-label="Why it’s cheaper">
+      <span class="chip" role="listitem">
+        <span class="chip-icn" aria-hidden="true">
+          <!-- percent/tag icon -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M3 12l7-7h7l4 4v7l-7 7-11-11Zm6.5 1.5 5-5 1 1-5 5-1-1Zm-1-4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm7 10a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/>
+          </svg>
+        </span>
+        0% Marketplace Fee
+      </span>
+
+      <span class="chip" role="listitem">
+        <span class="chip-icn" aria-hidden="true">
+          <!-- box/warehouse off icon -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M3 5h18v14H3V5Zm2 2v10h14V7H5Zm2 2h10v2H7V9Zm0 4h6v2H7v-2Z"/>
+          </svg>
+        </span>
+        Made-to-Order (No Warehousing)
+      </span>
+
+      <span class="chip" role="listitem">
+        <span class="chip-icn" aria-hidden="true">
+          <!-- map pin icon -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7Zm0 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+          </svg>
+        </span>
+        Local Manufacturing (Bangalore)
+      </span>
     </div>
-  </section>
-
+  </div>
+</section>
 
   <!-- FAQ -->
   <section id="faq" class="section muted-bg">
