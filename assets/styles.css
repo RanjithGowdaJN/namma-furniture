@@ -291,3 +291,9 @@ input[type="url"]:focus{border-color:var(--primary)}
 .site-header.dark .wm-namma{ color:#f8fafc; }
 .site-header.dark .wm-furniture{ color: var(--primary); }
 
+/* Make placeholder a touch more readable */
+input::placeholder { color: color-mix(in srgb, var(--muted-fg) 92%, white); }
+
+/* Slightly tighter form when no external label is used */
+.form-card.compact .input-row { margin-bottom: 12px; }
+
