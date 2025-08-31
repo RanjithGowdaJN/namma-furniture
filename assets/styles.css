@@ -244,3 +244,50 @@ input[type="url"]:focus{border-color:var(--primary)}
   /* Extra space before combined section */
   #how-why{ padding-top: 40px; }
 }
+
+/* ===== Brand: stacked wordmark (icon + two-line text) ===== */
+.brand-logo { display:flex; align-items:center; }
+
+.brand-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;          /* no underline */
+  color:inherit;                 /* no blue link */
+  cursor:pointer;
+}
+
+.brand-mark{
+  width:28px; height:28px;
+  border-radius:6px;
+  flex:0 0 28px;
+}
+
+.wordmark{
+  display:flex;
+  flex-direction:column;         /* force 2 lines */
+  line-height:1.0;
+  font-family: Inter, Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-weight:900;               /* bold like Namma Yatri */
+}
+
+.wm-namma,
+.wm-furniture{
+  display:block;
+  text-transform:lowercase;
+  white-space:nowrap;
+}
+
+.wm-namma{ color: var(--fg); font-size:18px; }
+.wm-furniture{ color: var(--primary); font-size:18px; margin-top:-2px; }
+
+@media (min-width: 860px){
+  .brand-mark{ width:32px; height:32px; }
+  .wm-namma{ font-size:20px; }
+  .wm-furniture{ font-size:20px; }
+}
+
+/* Optional if you ever switch to a dark header */
+.site-header.dark .wm-namma{ color:#f8fafc; }
+.site-header.dark .wm-furniture{ color: var(--primary); }
+
