@@ -114,3 +114,34 @@ input[type="url"]:focus{border-color:var(--primary)}
 /* Footer */
 .footer{border-top:1px solid var(--border);background:#fff;padding:18px 0;margin-top:24px}
 .footer .container{font-size:14px;color:var(--muted-fg)}
+
+/* Mini categories inside hero */
+.mini-cats{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:16px auto 0;
+  max-width:820px;
+}
+.mini-cat{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--fg);
+  border-radius:999px;
+  font-weight:600;
+  font-size:14px;
+  box-shadow:var(--shadow);
+}
+.mini-icn{
+  width:22px;height:22px;
+  display:grid;place-items:center;
+  color:var(--primary);
+}
+@media (max-width:420px){
+  .mini-cat{font-size:13px;padding:7px 10px}
+}
