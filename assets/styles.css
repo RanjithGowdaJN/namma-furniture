@@ -1,0 +1,121 @@
+/* Namma Furniture — clean static CSS (no Tailwind/Lovable) */
+:root{
+  --bg: hsl(33 12% 97%);
+  --fg: hsl(210 11% 15%);
+  --muted: hsl(220 13% 91%);
+  --muted-fg: hsl(220 9% 46%);
+  --card: #fff;
+  --border: hsl(220 13% 91%);
+  --primary: hsl(25 76% 31%);
+  --primary-2: hsl(25 95% 53%);
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--fg);
+  font:16px/1.6 Roboto, system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+.site-header{
+  position:sticky;top:0;z-index:10;
+  background:#fff;border-bottom:1px solid var(--border);
+}
+.header-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:700;font-size:22px;color:var(--primary);letter-spacing:.2px}
+.nav{display:none;gap:24px}
+.nav a{color:var(--fg);text-decoration:none}
+.nav a:hover{color:var(--primary)}
+
+.hide-on-desktop{display:inline-flex}
+
+@media (min-width: 860px){
+  .nav{display:flex}
+  .hide-on-desktop{display:none}
+}
+
+.section{padding:64px 0}
+.muted-bg{background: color-mix(in srgb, var(--muted) 50%, white)}
+.headline{
+  font:700 44px/1.15 Inter, Roboto, system-ui, sans-serif;
+  letter-spacing:-.2px;margin:0 0 12px;
+  text-wrap:balance;
+}
+.headline .accent{color:var(--primary)}
+.subhead{font-size:20px;color:var(--muted-fg);margin:0 0 28px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+
+.form-card .label{display:block;font-size:14px;font-weight:600;margin:0 0 10px;color:var(--fg)}
+.input-row{position:relative;margin-bottom:14px}
+.input-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--muted-fg)}
+input[type="url"]{
+  width:100%;height:48px;border:1px solid var(--border);border-radius:10px;padding:0 14px 0 40px;
+  font-size:16px;outline:none;background:var(--bg);
+}
+input[type="url"]:focus{border-color:var(--primary)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-weight:600;border-radius:10px;padding:12px 18px;border:1px solid transparent;cursor:pointer;
+  transition:all .15s ease;
+}
+.btn-sm{padding:8px 12px}
+.btn-outline{border-color:var(--border);background:#fff;color:var(--fg)}
+.btn-outline:hover{border-color:var(--primary);color:var(--primary)}
+.btn-whatsapp{background:#22c55e;color:#fff}
+.btn-whatsapp:hover{filter:brightness(0.95)}
+
+.tiny{font-size:12px}
+.muted{color:var(--muted-fg)}
+.hero{background:var(--bg)}
+.hero-content{text-align:center;max-width:800px;margin:0 auto}
+
+.section-title{font:700 32px/1.2 Inter, Roboto, sans-serif;margin:0 0 8px;text-align:center}
+.section-subtitle{color:var(--muted-fg);text-align:center;margin:0 0 28px}
+
+.grid{display:grid;gap:20px}
+.grid-3{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-4{grid-template-columns:repeat(1,minmax(0,1fr))}
+@media (min-width: 720px){
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-4{grid-template-columns:repeat(4,1fr)}
+}
+
+.step{text-align:center;padding:18px}
+.step-icon{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;
+  background: color-mix(in srgb, var(--primary-2) 20%, white);
+  color: var(--primary);
+}
+.step-icon svg{width:28px;height:28px}
+.step-title{font-weight:700;margin-bottom:4px}
+.step-desc{color:var(--muted-fg)}
+
+.info-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px}
+.info-card .icn{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;margin-bottom:10px;background:color-mix(in srgb, var(--primary-2) 20%, white);color:var(--primary)}
+.info-card svg{width:22px;height:22px}
+.card-title{font-weight:700;margin-bottom:6px}
+.card-desc{color:var(--muted-fg)}
+
+.faq details{border:1px solid var(--border);border-radius:12px;background:#fff;padding:14px 16px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:600;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:8px 0 0;color:var(--muted-fg)}
+
+.contact-grid{display:grid;gap:24px;grid-template-columns:1fr}
+.contact-card{background: color-mix(in srgb, var(--primary-2) 8%, white);border:1px solid var(--border);border-radius:12px;padding:24px}
+.contact-title{font-weight:700;font-size:22px;margin:0 0 8px}
+.contact-info .row{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+.badge{width:40px;height:40px;display:grid;place-items:center;background:var(--muted);border-radius:10px}
+.info-title{font-weight:700}
+@media (min-width: 860px){
+  .contact-grid{grid-template-columns: 1.2fr .8fr}
+}
+
+.footer{border-top:1px solid var(--border);background:#fff;padding:18px 0;margin-top:24px}
+.footer .container{font-size:14px;color:var(--muted-fg)}
