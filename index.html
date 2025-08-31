@@ -67,25 +67,30 @@
   <section class="section hero">
     <div class="container hero-content">
       <h1 class="headline">
-        Half the Price. <span class="accent">Same Furniture.</span>
+        Half the Price. <span class="accent">Same Furniture</span>
       </h1>
       <p class="subhead">Factory-direct furniture from Bangalore.</p>
 
-      <div class="card form-card">
-        <label for="productUrl" class="label">
-          Paste a product link (Urban Ladder, Pepperfry, Amazon, etc.)
-        </label>
+<div class="card form-card compact">
+  <div class="input-row">
+    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 1 0 0 6h3v2h-3a5 5 0 0 1-5-5Zm6.2 1h4v-2h-4v2Zm5-6h3a5 5 0 0 1 0 10h-3v-2h3a3 3 0 1 0 0-6h-3V7Z" fill="currentColor"/>
+    </svg>
 
-        <div class="input-row">
-          <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 1 0 0 6h3v2h-3a5 5 0 0 1-5-5Zm6.2 1h4v-2h-4v2Zm5-6h3a5 5 0 0 1 0 10h-3v-2h3a3 3 0 1 0 0-6h-3V7Z" fill="currentColor"/>
-          </svg>
-          <input id="productUrl" type="url" placeholder="https://www.urbanladder.com/..." autocomplete="off" />
-        </div>
+    <input
+      id="productUrl"
+      type="url"
+      inputmode="url"
+      pattern="https?://.+"
+      aria-label="Paste a product link for reference"
+      placeholder="Paste a product link (any furniture site) — e.g. https://example.com/furniture/study-table"
+      autocomplete="off"
+    />
+  </div>
 
-        <button id="waSendBtn" class="btn btn-whatsapp">Send on WhatsApp</button>
-        <p class="muted tiny">We'll review your link and give you a quote within 24 hours.</p>
-      </div>
+  <button id="waSendBtn" class="btn btn-whatsapp">Send on WhatsApp</button>
+  <p class="muted tiny">We'll review your link and give you a quote within 24 hours.</p>
+</div>
 
       <!-- small title above the mini cards -->
       <h3 class="hero-mini-title">What We Do Best</h3>
