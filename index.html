@@ -24,36 +24,77 @@
   <title>namma furniture — factory direct, half the price</title>
   <meta name="description" content="Factory-direct furniture from Bangalore. Share any product link and get the same utility at ~50% of the price." />
   <meta name="author" content="namma furniture" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon & app icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <!-- Canonical (choose one host and stick to it) -->
+  <link rel="canonical" href="https://www.nammafurniture.com/" />
 
-  <!-- Social sharing -->
-<!-- Open Graph -->
-<meta property="og:title" content="namma furniture — factory direct, half the price">
-<meta property="og:description" content="Share a product link. Get the same utility at ~50% of the price. Bangalore factory.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nammafurniture.com/">
+  <!-- Favicons / App icons -->
+  <!-- Google prefers a 48×48 PNG; add it if you can (see step 2) -->
+  <link rel="icon" type="image/png" sizes="48x48"  href="https://www.nammafurniture.com/assets/logo-48.png" />
+  <link rel="icon" type="image/png" sizes="32x32"  href="https://www.nammafurniture.com/assets/logo-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://www.nammafurniture.com/assets/logo-192.png" />
+  <!-- Keep a root favicon.ico as a fallback -->
+  <link rel="icon" href="https://www.nammafurniture.com/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.nammafurniture.com/assets/apple-touch-icon.png" />
 
-<!-- Use the logo-only 1200×630 -->
-<meta property="og:image" content="https://nammafurniture.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+  <!-- Open Graph (WhatsApp, FB, etc.) -->
+  <meta property="og:title" content="namma furniture — factory direct, half the price" />
+  <meta property="og:description" content="Share a product link. Get the same utility at ~50% of the price. Bangalore factory." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.nammafurniture.com/" />
+  <meta property="og:site_name" content="namma furniture" />
+  <!-- Use your logo-only 1200×630 -->
+  <meta property="og:image" content="https://www.nammafurniture.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-<!-- Twitter (many scrapers use this too) -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://nammafurniture.com/assets/og-image.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="namma furniture — factory direct, half the price" />
+  <meta name="twitter:description" content="Share a product link. Get the same utility at ~50% of the price. Bangalore factory." />
+  <meta name="twitter:image" content="https://www.nammafurniture.com/assets/og-image.png" />
 
+  <!-- Structured data (helps logo + sitename in Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "namma furniture",
+    "url": "https://www.nammafurniture.com/",
+    "logo": "https://www.nammafurniture.com/assets/logo-512.png",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "namma furniture",
+    "alternateName": ["namma furniture bangalore"],
+    "url": "https://www.nammafurniture.com/"
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="assets/styles.css" />
+
+  <!-- Google Analytics 4 (inside <head>) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MRF4D5F14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7MRF4D5F14', {
+      send_page_view: true,
+      debug_mode: location.hostname === 'localhost'
+    });
+  </script>
 </head>
+
 <body>
 
 <!-- Header -->
