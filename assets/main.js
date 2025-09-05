@@ -1,5 +1,5 @@
 // Namma Furniture — simple JS (no framework)
-const WHATSAPP_NUMBER = '919043404233'; // update if needed
+const WHATSAPP_NUMBER = '917349332777'; // update if needed
 
 // Smooth anchor scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
